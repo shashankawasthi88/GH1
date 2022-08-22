@@ -1,0 +1,15 @@
+id = eb850c6f-ef6a-41fb-bd5b-c532cf05548e
+
+[relations]
+
+[relations.collections]
+rootDirectory = postman/collections
+
+[relations.collections.metaData]
+
+[relations.apiDefinition]
+rootDirectory = postman
+files[] = {"path":"schema.yaml","metaData":{}}
+files[] = {"path":"schemas/schema.yaml","metaData":{}}
+
+[relations.apiDefinition.metaData]
