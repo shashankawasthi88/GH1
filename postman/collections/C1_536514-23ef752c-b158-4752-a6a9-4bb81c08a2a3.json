@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "23ef752c-b158-4752-a6a9-4bb81c08a2a3",
+		"name": "C1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "536514-23ef752c-b158-4752-a6a9-4bb81c08a2a3"
+	},
+	"item": [
+		{
+			"name": "google.com",
+			"id": "dd94b258-0c5c-4ee0-8ec3-169e573adef7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "www.google.com",
+					"host": [
+						"www",
+						"google",
+						"com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}{
+	"info": {
+		"_postman_id": "23ef752c-b158-4752-a6a9-4bb81c08a2a3",
+		"name": "C1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "536514-23ef752c-b158-4752-a6a9-4bb81c08a2a3"
+	},
+	"item": [
+		{
+			"name": "google.com",
+			"id": "dd94b258-0c5c-4ee0-8ec3-169e573adef7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "www.google.com",
+					"host": [
+						"www",
+						"google",
+						"com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
