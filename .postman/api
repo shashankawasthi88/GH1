@@ -4,6 +4,7 @@ id = 4bec47a1-2b51-46dc-a21e-7b62a631c8c8
 
 [relations.collections]
 rootDirectory = postman/collections
+<<<<<<< HEAD
 files[] = {"id":"631f203c-4aee-493d-8ef0-b043b8b64c4b","path":"C1_536514-631f203c-4aee-493d-8ef0-b043b8b64c4b.json","metaData":{}}
 
 [relations.collections.metaData]
@@ -20,6 +21,8 @@ id = 4bec47a1-2b51-46dc-a21e-7b62a631c8c8
 [relations.collections]
 rootDirectory = postman/collections
 files[] = {"id":"631f203c-4aee-493d-8ef0-b043b8b64c4b","path":"C1_536514-631f203c-4aee-493d-8ef0-b043b8b64c4b.json","metaData":{}}
+=======
+>>>>>>> fc1edf51711c2c91af6e1f0ca36e0e04d36bc36a
 
 [relations.collections.metaData]
 
