@@ -1,0 +1,3316 @@
+{
+	"item": [
+		{
+			"id": "3055e870-97e4-499f-8dae-8801b146b38d",
+			"name": "pet",
+			"item": [
+				{
+					"id": "af22371b-b3df-49c9-b345-6ca934b256da",
+					"name": "Update an existing pet",
+					"request": {
+						"name": "Update an existing pet",
+						"description": {
+							"content": "Update an existing pet by Id",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"pet"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml"
+							}
+						],
+						"method": "PUT",
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "write:pets read:pets"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://petstore3.swagger.io/oauth/authorize"
+								},
+								{
+									"key": "grant_type",
+									"value": "implicit"
+								}
+							]
+						},
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"disabled": false,
+									"key": "name",
+									"value": "doggie",
+									"description": "(Required) "
+								},
+								{
+									"disabled": false,
+									"key": "photoUrls",
+									"value": "irure id elit",
+									"description": "(Required) "
+								},
+								{
+									"disabled": false,
+									"key": "photoUrls",
+									"value": "qui",
+									"description": "(Required) "
+								},
+								{
+									"disabled": false,
+									"key": "id",
+									"value": "10"
+								},
+								{
+									"disabled": false,
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"disabled": false,
+									"key": "name",
+									"value": "Dogs"
+								},
+								{
+									"disabled": false,
+									"key": "tags",
+									"value": "{\"id\":-62036760,\"name\":\"occaecat sint deserunt cupidatat\"}"
+								},
+								{
+									"disabled": false,
+									"key": "tags",
+									"value": "{\"id\":11127511,\"name\":\"mollit\"}"
+								},
+								{
+									"disabled": false,
+									"key": "status",
+									"value": "available",
+									"description": "pet status in the store"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "e43b85ff-d558-4d23-b6a6-da78d6255c5e",
+							"name": "Successful operation",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"pet"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: oauth2",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"method": "PUT",
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "name",
+											"value": "doggie"
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "photoUrls",
+											"value": "irure "
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "photoUrls",
+											"value": "esse enim sunt"
+										},
+										{
+											"disabled": false,
+											"key": "id",
+											"value": "10"
+										},
+										{
+											"disabled": false,
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"disabled": false,
+											"key": "name",
+											"value": "Dogs"
+										},
+										{
+											"disabled": false,
+											"key": "tags",
+											"value": "{\"id\":-68366837,\"name\":\"ullamco dolore veniam in\"}"
+										},
+										{
+											"disabled": false,
+											"key": "tags",
+											"value": "{\"id\":73207889,\"name\":\"qui incididunt enim\"}"
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "pet status in the store",
+												"type": "text/plain"
+											},
+											"key": "status",
+											"value": "pending"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"irure \",\n    \"esse enim sunt\"\n  ],\n  \"id\": 10,\n  \"category\": {\n    \"id\": 1,\n    \"name\": \"Dogs\"\n  },\n  \"tags\": [\n    {\n      \"id\": -68366837,\n      \"name\": \"ullamco dolore veniam in\"\n    },\n    {\n      \"id\": 73207889,\n      \"name\": \"qui incididunt enim\"\n    }\n  ],\n  \"status\": \"pending\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "89fb6f46-10eb-49f2-a430-7e24e6e2cda2",
+							"name": "Invalid ID supplied",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"pet"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: oauth2",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"method": "PUT",
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "name",
+											"value": "doggie"
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "photoUrls",
+											"value": "irure "
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "photoUrls",
+											"value": "esse enim sunt"
+										},
+										{
+											"disabled": false,
+											"key": "id",
+											"value": "10"
+										},
+										{
+											"disabled": false,
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"disabled": false,
+											"key": "name",
+											"value": "Dogs"
+										},
+										{
+											"disabled": false,
+											"key": "tags",
+											"value": "{\"id\":-68366837,\"name\":\"ullamco dolore veniam in\"}"
+										},
+										{
+											"disabled": false,
+											"key": "tags",
+											"value": "{\"id\":73207889,\"name\":\"qui incididunt enim\"}"
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "pet status in the store",
+												"type": "text/plain"
+											},
+											"key": "status",
+											"value": "pending"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"body": "",
+							"cookie": [],
+							"_postman_previewlanguage": "text"
+						},
+						{
+							"id": "34089bbf-5422-45e2-8a16-e16063097b8b",
+							"name": "Pet not found",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"pet"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: oauth2",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"method": "PUT",
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "name",
+											"value": "doggie"
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "photoUrls",
+											"value": "irure "
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "photoUrls",
+											"value": "esse enim sunt"
+										},
+										{
+											"disabled": false,
+											"key": "id",
+											"value": "10"
+										},
+										{
+											"disabled": false,
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"disabled": false,
+											"key": "name",
+											"value": "Dogs"
+										},
+										{
+											"disabled": false,
+											"key": "tags",
+											"value": "{\"id\":-68366837,\"name\":\"ullamco dolore veniam in\"}"
+										},
+										{
+											"disabled": false,
+											"key": "tags",
+											"value": "{\"id\":73207889,\"name\":\"qui incididunt enim\"}"
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "pet status in the store",
+												"type": "text/plain"
+											},
+											"key": "status",
+											"value": "pending"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"body": "",
+							"cookie": [],
+							"_postman_previewlanguage": "text"
+						},
+						{
+							"id": "15769cf3-2762-4a53-a6b5-8da2a7988b2b",
+							"name": "Validation exception",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"pet"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: oauth2",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"method": "PUT",
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "name",
+											"value": "doggie"
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "photoUrls",
+											"value": "irure "
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "photoUrls",
+											"value": "esse enim sunt"
+										},
+										{
+											"disabled": false,
+											"key": "id",
+											"value": "10"
+										},
+										{
+											"disabled": false,
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"disabled": false,
+											"key": "name",
+											"value": "Dogs"
+										},
+										{
+											"disabled": false,
+											"key": "tags",
+											"value": "{\"id\":-68366837,\"name\":\"ullamco dolore veniam in\"}"
+										},
+										{
+											"disabled": false,
+											"key": "tags",
+											"value": "{\"id\":73207889,\"name\":\"qui incididunt enim\"}"
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "pet status in the store",
+												"type": "text/plain"
+											},
+											"key": "status",
+											"value": "pending"
+										}
+									]
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"body": "",
+							"cookie": [],
+							"_postman_previewlanguage": "text"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "4914400e-4566-44a4-ae1c-f65868a43c01",
+					"name": "Add a new pet to the store",
+					"request": {
+						"name": "Add a new pet to the store",
+						"description": {
+							"content": "Add a new pet to the store",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"pet"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "write:pets read:pets"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://petstore3.swagger.io/oauth/authorize"
+								},
+								{
+									"key": "grant_type",
+									"value": "implicit"
+								}
+							]
+						},
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"disabled": false,
+									"key": "name",
+									"value": "doggie",
+									"description": "(Required) "
+								},
+								{
+									"disabled": false,
+									"key": "photoUrls",
+									"value": "irure ",
+									"description": "(Required) "
+								},
+								{
+									"disabled": false,
+									"key": "photoUrls",
+									"value": "esse enim sunt",
+									"description": "(Required) "
+								},
+								{
+									"disabled": false,
+									"key": "id",
+									"value": "10"
+								},
+								{
+									"disabled": false,
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"disabled": false,
+									"key": "name",
+									"value": "Dogs"
+								},
+								{
+									"disabled": false,
+									"key": "tags",
+									"value": "{\"id\":-68366837,\"name\":\"ullamco dolore veniam in\"}"
+								},
+								{
+									"disabled": false,
+									"key": "tags",
+									"value": "{\"id\":73207889,\"name\":\"qui incididunt enim\"}"
+								},
+								{
+									"disabled": false,
+									"key": "status",
+									"value": "pending",
+									"description": "pet status in the store"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "5b9b0613-f3fe-4755-9c23-13580e6bd7b6",
+							"name": "Successful operation",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"pet"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: oauth2",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "name",
+											"value": "doggie"
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "photoUrls",
+											"value": "irure "
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "photoUrls",
+											"value": "esse enim sunt"
+										},
+										{
+											"disabled": false,
+											"key": "id",
+											"value": "10"
+										},
+										{
+											"disabled": false,
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"disabled": false,
+											"key": "name",
+											"value": "Dogs"
+										},
+										{
+											"disabled": false,
+											"key": "tags",
+											"value": "{\"id\":-68366837,\"name\":\"ullamco dolore veniam in\"}"
+										},
+										{
+											"disabled": false,
+											"key": "tags",
+											"value": "{\"id\":73207889,\"name\":\"qui incididunt enim\"}"
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "pet status in the store",
+												"type": "text/plain"
+											},
+											"key": "status",
+											"value": "pending"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"irure \",\n    \"esse enim sunt\"\n  ],\n  \"id\": 10,\n  \"category\": {\n    \"id\": 1,\n    \"name\": \"Dogs\"\n  },\n  \"tags\": [\n    {\n      \"id\": -68366837,\n      \"name\": \"ullamco dolore veniam in\"\n    },\n    {\n      \"id\": 73207889,\n      \"name\": \"qui incididunt enim\"\n    }\n  ],\n  \"status\": \"pending\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "f03f85d4-c6b9-4c38-80fd-0c4679e06528",
+							"name": "Invalid input",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"pet"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: oauth2",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "name",
+											"value": "doggie"
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "photoUrls",
+											"value": "irure "
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "(Required) ",
+												"type": "text/plain"
+											},
+											"key": "photoUrls",
+											"value": "esse enim sunt"
+										},
+										{
+											"disabled": false,
+											"key": "id",
+											"value": "10"
+										},
+										{
+											"disabled": false,
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"disabled": false,
+											"key": "name",
+											"value": "Dogs"
+										},
+										{
+											"disabled": false,
+											"key": "tags",
+											"value": "{\"id\":-68366837,\"name\":\"ullamco dolore veniam in\"}"
+										},
+										{
+											"disabled": false,
+											"key": "tags",
+											"value": "{\"id\":73207889,\"name\":\"qui incididunt enim\"}"
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "pet status in the store",
+												"type": "text/plain"
+											},
+											"key": "status",
+											"value": "pending"
+										}
+									]
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"body": "",
+							"cookie": [],
+							"_postman_previewlanguage": "text"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "c238d151-8abc-4561-a0f9-84078269a38a",
+					"name": "Finds Pets by status",
+					"request": {
+						"name": "Finds Pets by status",
+						"description": {
+							"content": "Multiple status values can be provided with comma separated strings",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"pet",
+								"findByStatus"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "status",
+									"value": "available",
+									"description": "Status values that need to be considered for filter"
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml"
+							}
+						],
+						"method": "GET",
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "write:pets read:pets"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://petstore3.swagger.io/oauth/authorize"
+								},
+								{
+									"key": "grant_type",
+									"value": "implicit"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "3c4d2804-0519-41d6-ac1c-9d07b36daf72",
+							"name": "successful operation",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"pet",
+										"findByStatus"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "available"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: oauth2",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "[\n  {\n    \"name\": \"doggie\",\n    \"photoUrls\": [\n      \"consectetur anim\",\n      \"e\"\n    ],\n    \"id\": 10,\n    \"category\": {\n      \"id\": 1,\n      \"name\": \"Dogs\"\n    },\n    \"tags\": [\n      {\n        \"id\": -9163730,\n        \"name\": \"labore sit reprehenderit deserunt\"\n      },\n      {\n        \"id\": -10816134,\n        \"name\": \"nulla Duis consectetur\"\n      }\n    ],\n    \"status\": \"pending\"\n  },\n  {\n    \"name\": \"doggie\",\n    \"photoUrls\": [\n      \"\",\n      \"reprehenderit voluptate est\"\n    ],\n    \"id\": 10,\n    \"category\": {\n      \"id\": 1,\n      \"name\": \"Dogs\"\n    },\n    \"tags\": [\n      {\n        \"id\": 96546350,\n        \"name\": \"culpa aliqua id sed\"\n      },\n      {\n        \"id\": 20704587,\n        \"name\": \"cupidatat et eiusmod mollit\"\n      }\n    ],\n    \"status\": \"pending\"\n  }\n]",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "b57d49f7-c402-40b1-9e67-0a315f6b1a70",
+							"name": "Invalid status value",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"pet",
+										"findByStatus"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "available"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: oauth2",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"body": "",
+							"cookie": [],
+							"_postman_previewlanguage": "text"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "3388da38-c771-41a6-a56d-25aa342858b6",
+					"name": "Finds Pets by tags",
+					"request": {
+						"name": "Finds Pets by tags",
+						"description": {
+							"content": "Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"pet",
+								"findByTags"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "tags",
+									"value": "nostrud elit",
+									"description": "Tags to filter by"
+								},
+								{
+									"disabled": false,
+									"key": "tags",
+									"value": "do id",
+									"description": "Tags to filter by"
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml"
+							}
+						],
+						"method": "GET",
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "write:pets read:pets"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://petstore3.swagger.io/oauth/authorize"
+								},
+								{
+									"key": "grant_type",
+									"value": "implicit"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "e1d18745-22ae-4b41-92be-ffd6e3477c2c",
+							"name": "successful operation",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"pet",
+										"findByTags"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "tags",
+											"value": "enim"
+										},
+										{
+											"key": "tags",
+											"value": "Excepteur nulla nostrud"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: oauth2",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "[\n  {\n    \"name\": \"doggie\",\n    \"photoUrls\": [\n      \"consectetur anim\",\n      \"e\"\n    ],\n    \"id\": 10,\n    \"category\": {\n      \"id\": 1,\n      \"name\": \"Dogs\"\n    },\n    \"tags\": [\n      {\n        \"id\": -9163730,\n        \"name\": \"labore sit reprehenderit deserunt\"\n      },\n      {\n        \"id\": -10816134,\n        \"name\": \"nulla Duis consectetur\"\n      }\n    ],\n    \"status\": \"pending\"\n  },\n  {\n    \"name\": \"doggie\",\n    \"photoUrls\": [\n      \"\",\n      \"reprehenderit voluptate est\"\n    ],\n    \"id\": 10,\n    \"category\": {\n      \"id\": 1,\n      \"name\": \"Dogs\"\n    },\n    \"tags\": [\n      {\n        \"id\": 96546350,\n        \"name\": \"culpa aliqua id sed\"\n      },\n      {\n        \"id\": 20704587,\n        \"name\": \"cupidatat et eiusmod mollit\"\n      }\n    ],\n    \"status\": \"pending\"\n  }\n]",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "db06690f-2fc6-42a7-895d-9aec53788080",
+							"name": "Invalid tag value",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"pet",
+										"findByTags"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "tags",
+											"value": "enim"
+										},
+										{
+											"key": "tags",
+											"value": "Excepteur nulla nostrud"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: oauth2",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"body": "",
+							"cookie": [],
+							"_postman_previewlanguage": "text"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "abc5c1c9-bc6f-45db-80f3-e93f8637e52d",
+					"name": "{pet Id}",
+					"item": [
+						{
+							"id": "801d1778-4b10-4adf-bfa4-15220019c97f",
+							"name": "Find pet by ID",
+							"request": {
+								"name": "Find pet by ID",
+								"description": {
+									"content": "Returns a single pet",
+									"type": "text/plain"
+								},
+								"url": {
+									"path": [
+										"pet",
+										":petId"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "-38276807",
+											"key": "petId",
+											"description": "(Required) ID of pet to return"
+										}
+									]
+								},
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml"
+									}
+								],
+								"method": "GET",
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "key",
+											"value": "api_key"
+										},
+										{
+											"key": "value",
+											"value": "<API Key>"
+										},
+										{
+											"key": "in",
+											"value": "header"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "78e6363f-6eb8-4bc3-b757-67cf2e53f296",
+									"name": "successful operation",
+									"originalRequest": {
+										"url": {
+											"path": [
+												"pet",
+												":petId"
+											],
+											"host": [
+												"{{baseUrl}}"
+											],
+											"query": [],
+											"variable": [
+												{
+													"disabled": false,
+													"type": "any",
+													"value": "-38276807",
+													"key": "petId",
+													"description": "(Required) ID of pet to return"
+												}
+											]
+										},
+										"header": [
+											{
+												"description": {
+													"content": "Added as a part of security scheme: apikey",
+													"type": "text/plain"
+												},
+												"key": "api_key",
+												"value": "<API Key>"
+											}
+										],
+										"method": "GET",
+										"body": {}
+									},
+									"status": "OK",
+									"code": 200,
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"body": "{\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"irure \",\n    \"esse enim sunt\"\n  ],\n  \"id\": 10,\n  \"category\": {\n    \"id\": 1,\n    \"name\": \"Dogs\"\n  },\n  \"tags\": [\n    {\n      \"id\": -68366837,\n      \"name\": \"ullamco dolore veniam in\"\n    },\n    {\n      \"id\": 73207889,\n      \"name\": \"qui incididunt enim\"\n    }\n  ],\n  \"status\": \"pending\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								},
+								{
+									"id": "4c6fc8fa-28db-4e75-9b08-d89194d81f6f",
+									"name": "Invalid ID supplied",
+									"originalRequest": {
+										"url": {
+											"path": [
+												"pet",
+												":petId"
+											],
+											"host": [
+												"{{baseUrl}}"
+											],
+											"query": [],
+											"variable": [
+												{
+													"disabled": false,
+													"type": "any",
+													"value": "-38276807",
+													"key": "petId",
+													"description": "(Required) ID of pet to return"
+												}
+											]
+										},
+										"header": [
+											{
+												"description": {
+													"content": "Added as a part of security scheme: apikey",
+													"type": "text/plain"
+												},
+												"key": "api_key",
+												"value": "<API Key>"
+											}
+										],
+										"method": "GET",
+										"body": {}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"body": "",
+									"cookie": [],
+									"_postman_previewlanguage": "text"
+								},
+								{
+									"id": "2ff5944d-b9b5-4bf0-84c5-8effa796832a",
+									"name": "Pet not found",
+									"originalRequest": {
+										"url": {
+											"path": [
+												"pet",
+												":petId"
+											],
+											"host": [
+												"{{baseUrl}}"
+											],
+											"query": [],
+											"variable": [
+												{
+													"disabled": false,
+													"type": "any",
+													"value": "-38276807",
+													"key": "petId",
+													"description": "(Required) ID of pet to return"
+												}
+											]
+										},
+										"header": [
+											{
+												"description": {
+													"content": "Added as a part of security scheme: apikey",
+													"type": "text/plain"
+												},
+												"key": "api_key",
+												"value": "<API Key>"
+											}
+										],
+										"method": "GET",
+										"body": {}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"body": "",
+									"cookie": [],
+									"_postman_previewlanguage": "text"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							}
+						},
+						{
+							"id": "33d4e1e1-77f7-4733-b56f-b2628de4d41a",
+							"name": "Updates a pet in the store with form data",
+							"request": {
+								"name": "Updates a pet in the store with form data",
+								"description": {
+									"content": "",
+									"type": "text/plain"
+								},
+								"url": {
+									"path": [
+										"pet",
+										":petId"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"disabled": false,
+											"key": "name",
+											"value": "ipsum id pariatur enim",
+											"description": "Name of pet that needs to be updated"
+										},
+										{
+											"disabled": false,
+											"key": "status",
+											"value": "ipsum id pariatur enim",
+											"description": "Status of pet that needs to be updated"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "-38276807",
+											"key": "petId",
+											"description": "(Required) ID of pet that needs to be updated"
+										}
+									]
+								},
+								"method": "POST",
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "scope",
+											"value": "write:pets read:pets"
+										},
+										{
+											"key": "authUrl",
+											"value": "https://petstore3.swagger.io/oauth/authorize"
+										},
+										{
+											"key": "grant_type",
+											"value": "implicit"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "b718c63c-e7c2-4cc8-85ac-95089e192979",
+									"name": "Invalid input",
+									"originalRequest": {
+										"url": {
+											"path": [
+												"pet",
+												":petId"
+											],
+											"host": [
+												"{{baseUrl}}"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "ipsum id pariatur enim"
+												},
+												{
+													"key": "status",
+													"value": "ipsum id pariatur enim"
+												}
+											],
+											"variable": [
+												{
+													"disabled": false,
+													"type": "any",
+													"value": "-38276807",
+													"key": "petId",
+													"description": "(Required) ID of pet that needs to be updated"
+												}
+											]
+										},
+										"header": [
+											{
+												"description": {
+													"content": "Added as a part of security scheme: oauth2",
+													"type": "text/plain"
+												},
+												"key": "Authorization",
+												"value": "<token>"
+											}
+										],
+										"method": "POST",
+										"body": {}
+									},
+									"status": "Method Not Allowed",
+									"code": 405,
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"body": "",
+									"cookie": [],
+									"_postman_previewlanguage": "text"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							}
+						},
+						{
+							"id": "b9cf6268-ebe9-4964-9365-3c62a7cb77a9",
+							"name": "Deletes a pet",
+							"request": {
+								"name": "Deletes a pet",
+								"description": {
+									"content": "",
+									"type": "text/plain"
+								},
+								"url": {
+									"path": [
+										"pet",
+										":petId"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "-38276807",
+											"key": "petId",
+											"description": "(Required) Pet id to delete"
+										}
+									]
+								},
+								"header": [
+									{
+										"disabled": false,
+										"key": "api_key",
+										"value": "ipsum id pariatur enim",
+										"description": ""
+									}
+								],
+								"method": "DELETE",
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "scope",
+											"value": "write:pets read:pets"
+										},
+										{
+											"key": "authUrl",
+											"value": "https://petstore3.swagger.io/oauth/authorize"
+										},
+										{
+											"key": "grant_type",
+											"value": "implicit"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "536e84fb-a975-46e3-80dd-ea0e38351528",
+									"name": "Invalid pet value",
+									"originalRequest": {
+										"url": {
+											"path": [
+												"pet",
+												":petId"
+											],
+											"host": [
+												"{{baseUrl}}"
+											],
+											"query": [],
+											"variable": [
+												{
+													"disabled": false,
+													"type": "any",
+													"value": "-38276807",
+													"key": "petId",
+													"description": "(Required) Pet id to delete"
+												}
+											]
+										},
+										"header": [
+											{
+												"description": {
+													"content": "Added as a part of security scheme: oauth2",
+													"type": "text/plain"
+												},
+												"key": "Authorization",
+												"value": "<token>"
+											},
+											{
+												"disabled": false,
+												"key": "api_key",
+												"value": "ipsum id pariatur enim",
+												"description": ""
+											}
+										],
+										"method": "DELETE",
+										"body": {}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"body": "",
+									"cookie": [],
+									"_postman_previewlanguage": "text"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							}
+						},
+						{
+							"id": "94ed8db4-8869-4685-b010-a3ee8066d9f6",
+							"name": "uploads an image",
+							"request": {
+								"name": "uploads an image",
+								"description": {
+									"content": "",
+									"type": "text/plain"
+								},
+								"url": {
+									"path": [
+										"pet",
+										":petId",
+										"uploadImage"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"disabled": false,
+											"key": "additionalMetadata",
+											"value": "ipsum id pariatur enim",
+											"description": "Additional Metadata"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "-38276807",
+											"key": "petId",
+											"description": "(Required) ID of pet to update"
+										}
+									]
+								},
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/octet-stream"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "scope",
+											"value": "write:pets read:pets"
+										},
+										{
+											"key": "authUrl",
+											"value": "https://petstore3.swagger.io/oauth/authorize"
+										},
+										{
+											"key": "grant_type",
+											"value": "implicit"
+										}
+									]
+								},
+								"body": {
+									"mode": "file"
+								}
+							},
+							"response": [
+								{
+									"id": "075e3125-47e0-4ae7-bd08-7698cb1ed9e2",
+									"name": "successful operation",
+									"originalRequest": {
+										"url": {
+											"path": [
+												"pet",
+												":petId",
+												"uploadImage"
+											],
+											"host": [
+												"{{baseUrl}}"
+											],
+											"query": [
+												{
+													"key": "additionalMetadata",
+													"value": "ipsum id pariatur enim"
+												}
+											],
+											"variable": [
+												{
+													"disabled": false,
+													"type": "any",
+													"value": "-38276807",
+													"key": "petId",
+													"description": "(Required) ID of pet to update"
+												}
+											]
+										},
+										"header": [
+											{
+												"description": {
+													"content": "Added as a part of security scheme: oauth2",
+													"type": "text/plain"
+												},
+												"key": "Authorization",
+												"value": "<token>"
+											}
+										],
+										"method": "POST",
+										"body": {
+											"mode": "file"
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"body": "{\n  \"code\": 17335415,\n  \"type\": \"veniam elit consectetur cupidatat consequat\",\n  \"message\": \"dolore dolor cillum\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							}
+						}
+					],
+					"event": []
+				}
+			],
+			"event": []
+		},
+		{
+			"id": "05d8f621-a7af-494a-babb-29b199388fc1",
+			"name": "store",
+			"item": [
+				{
+					"id": "94931773-0310-4a41-b3b6-739e762e0135",
+					"name": "Returns pet inventories by status",
+					"request": {
+						"name": "Returns pet inventories by status",
+						"description": {
+							"content": "Returns a map of status codes to quantities",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"store",
+								"inventory"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "GET",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "api_key"
+								},
+								{
+									"key": "value",
+									"value": "<API Key>"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "83800c21-b9f0-4d8c-b6f2-8741743cfff8",
+							"name": "successful operation",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"store",
+										"inventory"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "api_key",
+										"value": "<API Key>"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"fugiat_ba2\": 56897634,\n  \"do_960\": 95850714,\n  \"consequatc\": 48050561\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "8912a31f-c4c4-4c6c-a49e-71e37dfeed29",
+					"name": "order",
+					"item": [
+						{
+							"id": "83e4fef7-1bb0-4d85-bcd0-e6cacde60a66",
+							"name": "Place an order for a pet",
+							"request": {
+								"name": "Place an order for a pet",
+								"description": {
+									"content": "Place a new order in the store",
+									"type": "text/plain"
+								},
+								"url": {
+									"path": [
+										"store",
+										"order"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"auth": null,
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"disabled": false,
+											"key": "id",
+											"value": "10"
+										},
+										{
+											"disabled": false,
+											"key": "petId",
+											"value": "198772"
+										},
+										{
+											"disabled": false,
+											"key": "quantity",
+											"value": "7"
+										},
+										{
+											"disabled": false,
+											"key": "shipDate",
+											"value": "2019-03-07T02:44:54.047Z"
+										},
+										{
+											"disabled": false,
+											"key": "status",
+											"value": "approved",
+											"description": "Order Status"
+										},
+										{
+											"disabled": false,
+											"key": "complete",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "d24a89b8-838e-4885-bcaf-7470260a0143",
+									"name": "successful operation",
+									"originalRequest": {
+										"url": {
+											"path": [
+												"store",
+												"order"
+											],
+											"host": [
+												"{{baseUrl}}"
+											],
+											"query": [],
+											"variable": []
+										},
+										"method": "POST",
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"disabled": false,
+													"key": "id",
+													"value": "10"
+												},
+												{
+													"disabled": false,
+													"key": "petId",
+													"value": "198772"
+												},
+												{
+													"disabled": false,
+													"key": "quantity",
+													"value": "7"
+												},
+												{
+													"disabled": false,
+													"key": "shipDate",
+													"value": "2019-03-07T02:44:54.047Z"
+												},
+												{
+													"disabled": false,
+													"description": {
+														"content": "Order Status",
+														"type": "text/plain"
+													},
+													"key": "status",
+													"value": "approved"
+												},
+												{
+													"disabled": false,
+													"key": "complete",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"body": "{\n  \"id\": 10,\n  \"petId\": 198772,\n  \"quantity\": 7,\n  \"shipDate\": \"2019-03-07T02:44:54.047Z\",\n  \"status\": \"approved\",\n  \"complete\": true\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								},
+								{
+									"id": "571e0dff-d658-43ca-bfd8-9d57b2808f7f",
+									"name": "Invalid input",
+									"originalRequest": {
+										"url": {
+											"path": [
+												"store",
+												"order"
+											],
+											"host": [
+												"{{baseUrl}}"
+											],
+											"query": [],
+											"variable": []
+										},
+										"method": "POST",
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"disabled": false,
+													"key": "id",
+													"value": "10"
+												},
+												{
+													"disabled": false,
+													"key": "petId",
+													"value": "198772"
+												},
+												{
+													"disabled": false,
+													"key": "quantity",
+													"value": "7"
+												},
+												{
+													"disabled": false,
+													"key": "shipDate",
+													"value": "2019-03-07T02:44:54.047Z"
+												},
+												{
+													"disabled": false,
+													"description": {
+														"content": "Order Status",
+														"type": "text/plain"
+													},
+													"key": "status",
+													"value": "approved"
+												},
+												{
+													"disabled": false,
+													"key": "complete",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "Method Not Allowed",
+									"code": 405,
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"body": "",
+									"cookie": [],
+									"_postman_previewlanguage": "text"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							}
+						},
+						{
+							"id": "3640f925-97e7-4120-b9b1-8519aacb0f3a",
+							"name": "{order Id}",
+							"item": [
+								{
+									"id": "013d8c77-bbaf-4bce-aea1-08c1238909cb",
+									"name": "Find purchase order by ID",
+									"request": {
+										"name": "Find purchase order by ID",
+										"description": {
+											"content": "For valid response try integer IDs with value <= 5 or > 10. Other values will generate exceptions.",
+											"type": "text/plain"
+										},
+										"url": {
+											"path": [
+												"store",
+												"order",
+												":orderId"
+											],
+											"host": [
+												"{{baseUrl}}"
+											],
+											"query": [],
+											"variable": [
+												{
+													"disabled": false,
+													"type": "any",
+													"value": "-38276807",
+													"key": "orderId",
+													"description": "(Required) ID of order that needs to be fetched"
+												}
+											]
+										},
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/xml"
+											}
+										],
+										"method": "GET",
+										"auth": null
+									},
+									"response": [
+										{
+											"id": "6875c66f-3d16-4288-899f-421cbd7540bf",
+											"name": "successful operation",
+											"originalRequest": {
+												"url": {
+													"path": [
+														"store",
+														"order",
+														":orderId"
+													],
+													"host": [
+														"{{baseUrl}}"
+													],
+													"query": [],
+													"variable": [
+														{
+															"disabled": false,
+															"type": "any",
+															"value": "-38276807",
+															"key": "orderId",
+															"description": "(Required) ID of order that needs to be fetched"
+														}
+													]
+												},
+												"method": "GET",
+												"body": {}
+											},
+											"status": "OK",
+											"code": 200,
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"body": "{\n  \"id\": 10,\n  \"petId\": 198772,\n  \"quantity\": 7,\n  \"shipDate\": \"2019-03-07T02:44:54.047Z\",\n  \"status\": \"approved\",\n  \"complete\": true\n}",
+											"cookie": [],
+											"_postman_previewlanguage": "json"
+										},
+										{
+											"id": "5490a8ac-772e-4400-b372-727237ef5a56",
+											"name": "Invalid ID supplied",
+											"originalRequest": {
+												"url": {
+													"path": [
+														"store",
+														"order",
+														":orderId"
+													],
+													"host": [
+														"{{baseUrl}}"
+													],
+													"query": [],
+													"variable": [
+														{
+															"disabled": false,
+															"type": "any",
+															"value": "-38276807",
+															"key": "orderId",
+															"description": "(Required) ID of order that needs to be fetched"
+														}
+													]
+												},
+												"method": "GET",
+												"body": {}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"body": "",
+											"cookie": [],
+											"_postman_previewlanguage": "text"
+										},
+										{
+											"id": "1a665fbf-4198-4a89-98a4-13adf09987d2",
+											"name": "Order not found",
+											"originalRequest": {
+												"url": {
+													"path": [
+														"store",
+														"order",
+														":orderId"
+													],
+													"host": [
+														"{{baseUrl}}"
+													],
+													"query": [],
+													"variable": [
+														{
+															"disabled": false,
+															"type": "any",
+															"value": "-38276807",
+															"key": "orderId",
+															"description": "(Required) ID of order that needs to be fetched"
+														}
+													]
+												},
+												"method": "GET",
+												"body": {}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"body": "",
+											"cookie": [],
+											"_postman_previewlanguage": "text"
+										}
+									],
+									"event": [],
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									}
+								},
+								{
+									"id": "15cefc9b-6365-400c-a044-c9624d59c02f",
+									"name": "Delete purchase order by ID",
+									"request": {
+										"name": "Delete purchase order by ID",
+										"description": {
+											"content": "For valid response try integer IDs with value < 1000. Anything above 1000 or nonintegers will generate API errors",
+											"type": "text/plain"
+										},
+										"url": {
+											"path": [
+												"store",
+												"order",
+												":orderId"
+											],
+											"host": [
+												"{{baseUrl}}"
+											],
+											"query": [],
+											"variable": [
+												{
+													"disabled": false,
+													"type": "any",
+													"value": "-38276807",
+													"key": "orderId",
+													"description": "(Required) ID of the order that needs to be deleted"
+												}
+											]
+										},
+										"method": "DELETE",
+										"auth": null
+									},
+									"response": [
+										{
+											"id": "c354e49c-9da9-4ea1-a2e3-5cb15be4ee1a",
+											"name": "Invalid ID supplied",
+											"originalRequest": {
+												"url": {
+													"path": [
+														"store",
+														"order",
+														":orderId"
+													],
+													"host": [
+														"{{baseUrl}}"
+													],
+													"query": [],
+													"variable": [
+														{
+															"disabled": false,
+															"type": "any",
+															"value": "-38276807",
+															"key": "orderId",
+															"description": "(Required) ID of the order that needs to be deleted"
+														}
+													]
+												},
+												"method": "DELETE",
+												"body": {}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"body": "",
+											"cookie": [],
+											"_postman_previewlanguage": "text"
+										},
+										{
+											"id": "503ddeeb-b177-4780-9aa2-61bfeb5f2ce1",
+											"name": "Order not found",
+											"originalRequest": {
+												"url": {
+													"path": [
+														"store",
+														"order",
+														":orderId"
+													],
+													"host": [
+														"{{baseUrl}}"
+													],
+													"query": [],
+													"variable": [
+														{
+															"disabled": false,
+															"type": "any",
+															"value": "-38276807",
+															"key": "orderId",
+															"description": "(Required) ID of the order that needs to be deleted"
+														}
+													]
+												},
+												"method": "DELETE",
+												"body": {}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"body": "",
+											"cookie": [],
+											"_postman_previewlanguage": "text"
+										}
+									],
+									"event": [],
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									}
+								}
+							],
+							"event": []
+						}
+					],
+					"event": []
+				}
+			],
+			"event": []
+		},
+		{
+			"id": "ca136636-f676-4688-8ffd-8a7455a2593e",
+			"name": "user",
+			"item": [
+				{
+					"id": "acc26539-527e-48e1-8155-af620d9e4a1f",
+					"name": "Create user",
+					"request": {
+						"name": "Create user",
+						"description": {
+							"content": "This can only be done by the logged in user.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"user"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": null,
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"disabled": false,
+									"key": "id",
+									"value": "10"
+								},
+								{
+									"disabled": false,
+									"key": "username",
+									"value": "theUser"
+								},
+								{
+									"disabled": false,
+									"key": "firstName",
+									"value": "John"
+								},
+								{
+									"disabled": false,
+									"key": "lastName",
+									"value": "James"
+								},
+								{
+									"disabled": false,
+									"key": "email",
+									"value": "john@email.com"
+								},
+								{
+									"disabled": false,
+									"key": "password",
+									"value": "12345"
+								},
+								{
+									"disabled": false,
+									"key": "phone",
+									"value": "12345"
+								},
+								{
+									"disabled": false,
+									"key": "userStatus",
+									"value": "1",
+									"description": "User Status"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "3d221e07-5cd0-4c91-8e7e-7f743d00c214",
+							"name": "successful operation",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"user"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [],
+									"variable": []
+								},
+								"method": "POST",
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"disabled": false,
+											"key": "id",
+											"value": "10"
+										},
+										{
+											"disabled": false,
+											"key": "username",
+											"value": "theUser"
+										},
+										{
+											"disabled": false,
+											"key": "firstName",
+											"value": "John"
+										},
+										{
+											"disabled": false,
+											"key": "lastName",
+											"value": "James"
+										},
+										{
+											"disabled": false,
+											"key": "email",
+											"value": "john@email.com"
+										},
+										{
+											"disabled": false,
+											"key": "password",
+											"value": "12345"
+										},
+										{
+											"disabled": false,
+											"key": "phone",
+											"value": "12345"
+										},
+										{
+											"disabled": false,
+											"description": {
+												"content": "User Status",
+												"type": "text/plain"
+											},
+											"key": "userStatus",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"id\": 10,\n  \"username\": \"theUser\",\n  \"firstName\": \"John\",\n  \"lastName\": \"James\",\n  \"email\": \"john@email.com\",\n  \"password\": \"12345\",\n  \"phone\": \"12345\",\n  \"userStatus\": 1\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "717c5fd3-4df0-445c-816b-b3dc8b289db5",
+					"name": "Creates list of users with given input array",
+					"request": {
+						"name": "Creates list of users with given input array",
+						"description": {
+							"content": "Creates list of users with given input array",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"user",
+								"createWithList"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml"
+							}
+						],
+						"method": "POST",
+						"auth": null,
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"id\": 10,\n    \"username\": \"theUser\",\n    \"firstName\": \"John\",\n    \"lastName\": \"James\",\n    \"email\": \"john@email.com\",\n    \"password\": \"12345\",\n    \"phone\": \"12345\",\n    \"userStatus\": 1\n  },\n  {\n    \"id\": 10,\n    \"username\": \"theUser\",\n    \"firstName\": \"John\",\n    \"lastName\": \"James\",\n    \"email\": \"john@email.com\",\n    \"password\": \"12345\",\n    \"phone\": \"12345\",\n    \"userStatus\": 1\n  }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "599d098f-14f7-44b6-aa0f-6922a9e32b95",
+							"name": "Successful operation",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"user",
+										"createWithList"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [],
+									"variable": []
+								},
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "[\n  {\n    \"id\": 10,\n    \"username\": \"theUser\",\n    \"firstName\": \"John\",\n    \"lastName\": \"James\",\n    \"email\": \"john@email.com\",\n    \"password\": \"12345\",\n    \"phone\": \"12345\",\n    \"userStatus\": 1\n  },\n  {\n    \"id\": 10,\n    \"username\": \"theUser\",\n    \"firstName\": \"John\",\n    \"lastName\": \"James\",\n    \"email\": \"john@email.com\",\n    \"password\": \"12345\",\n    \"phone\": \"12345\",\n    \"userStatus\": 1\n  }\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"id\": 10,\n  \"username\": \"theUser\",\n  \"firstName\": \"John\",\n  \"lastName\": \"James\",\n  \"email\": \"john@email.com\",\n  \"password\": \"12345\",\n  \"phone\": \"12345\",\n  \"userStatus\": 1\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "7f55002a-381c-4d7c-82f3-2ae03e5684da",
+							"name": "successful operation",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"user",
+										"createWithList"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [],
+									"variable": []
+								},
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "[\n  {\n    \"id\": 10,\n    \"username\": \"theUser\",\n    \"firstName\": \"John\",\n    \"lastName\": \"James\",\n    \"email\": \"john@email.com\",\n    \"password\": \"12345\",\n    \"phone\": \"12345\",\n    \"userStatus\": 1\n  },\n  {\n    \"id\": 10,\n    \"username\": \"theUser\",\n    \"firstName\": \"John\",\n    \"lastName\": \"James\",\n    \"email\": \"john@email.com\",\n    \"password\": \"12345\",\n    \"phone\": \"12345\",\n    \"userStatus\": 1\n  }\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"body": "",
+							"cookie": [],
+							"_postman_previewlanguage": "text"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "78fcc0a0-274a-4b5d-bb42-f5550fd38e1b",
+					"name": "Logs user into the system",
+					"request": {
+						"name": "Logs user into the system",
+						"description": {
+							"content": "",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"user",
+								"login"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "username",
+									"value": "ipsum id pariatur enim",
+									"description": "The user name for login"
+								},
+								{
+									"disabled": false,
+									"key": "password",
+									"value": "ipsum id pariatur enim",
+									"description": "The password for login in clear text"
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml"
+							}
+						],
+						"method": "GET",
+						"auth": null
+					},
+					"response": [
+						{
+							"id": "0cf1d770-aa4f-474a-b089-82558d28ed42",
+							"name": "successful operation",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"user",
+										"login"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "ipsum id pariatur enim"
+										},
+										{
+											"key": "password",
+											"value": "ipsum id pariatur enim"
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"disabled": false,
+									"description": "calls per hour allowed by the user",
+									"key": "X-Rate-Limit",
+									"value": "34221879"
+								},
+								{
+									"disabled": false,
+									"description": "date in UTC when token expires",
+									"key": "X-Expires-After",
+									"value": "1946-06-09T00:10:05.890Z"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "\"ipsum id pariatur enim\"",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "9188be76-ee01-4f97-b2d3-15fd451304e2",
+							"name": "Invalid username/password supplied",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"user",
+										"login"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "ipsum id pariatur enim"
+										},
+										{
+											"key": "password",
+											"value": "ipsum id pariatur enim"
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"body": "",
+							"cookie": [],
+							"_postman_previewlanguage": "text"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "6db6f60e-7dd3-40fd-afef-8b716603e592",
+					"name": "Logs out current logged in user session",
+					"request": {
+						"name": "Logs out current logged in user session",
+						"description": {
+							"content": "",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"user",
+								"logout"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [],
+							"variable": []
+						},
+						"method": "GET",
+						"auth": null
+					},
+					"response": [
+						{
+							"id": "e62d38cd-2ec4-4b46-b14a-6f786e67c093",
+							"name": "successful operation",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"user",
+										"logout"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [],
+									"variable": []
+								},
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"body": "",
+							"cookie": [],
+							"_postman_previewlanguage": "text"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "ec77e2d3-9439-4cca-9fe4-d4f7173f5c9e",
+					"name": "{username}",
+					"item": [
+						{
+							"id": "cd0b9206-764f-40ad-9616-1f8998dfbd3b",
+							"name": "Get user by user name",
+							"request": {
+								"name": "Get user by user name",
+								"description": {
+									"content": "",
+									"type": "text/plain"
+								},
+								"url": {
+									"path": [
+										"user",
+										":username"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "ipsum id pariatur enim",
+											"key": "username",
+											"description": "(Required) The name that needs to be fetched. Use user1 for testing. "
+										}
+									]
+								},
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml"
+									}
+								],
+								"method": "GET",
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "054b643c-6b81-4d2f-a3e3-9f83282fbc30",
+									"name": "successful operation",
+									"originalRequest": {
+										"url": {
+											"path": [
+												"user",
+												":username"
+											],
+											"host": [
+												"{{baseUrl}}"
+											],
+											"query": [],
+											"variable": [
+												{
+													"disabled": false,
+													"type": "any",
+													"value": "ipsum id pariatur enim",
+													"key": "username",
+													"description": "(Required) The name that needs to be fetched. Use user1 for testing. "
+												}
+											]
+										},
+										"method": "GET",
+										"body": {}
+									},
+									"status": "OK",
+									"code": 200,
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"body": "{\n  \"id\": 10,\n  \"username\": \"theUser\",\n  \"firstName\": \"John\",\n  \"lastName\": \"James\",\n  \"email\": \"john@email.com\",\n  \"password\": \"12345\",\n  \"phone\": \"12345\",\n  \"userStatus\": 1\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								},
+								{
+									"id": "a3408688-73b6-45e7-a484-e04cf61e3943",
+									"name": "Invalid username supplied",
+									"originalRequest": {
+										"url": {
+											"path": [
+												"user",
+												":username"
+											],
+											"host": [
+												"{{baseUrl}}"
+											],
+											"query": [],
+											"variable": [
+												{
+													"disabled": false,
+													"type": "any",
+													"value": "ipsum id pariatur enim",
+													"key": "username",
+													"description": "(Required) The name that needs to be fetched. Use user1 for testing. "
+												}
+											]
+										},
+										"method": "GET",
+										"body": {}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"body": "",
+									"cookie": [],
+									"_postman_previewlanguage": "text"
+								},
+								{
+									"id": "c735d18d-eefa-4b41-af9d-bb5da53ec442",
+									"name": "User not found",
+									"originalRequest": {
+										"url": {
+											"path": [
+												"user",
+												":username"
+											],
+											"host": [
+												"{{baseUrl}}"
+											],
+											"query": [],
+											"variable": [
+												{
+													"disabled": false,
+													"type": "any",
+													"value": "ipsum id pariatur enim",
+													"key": "username",
+													"description": "(Required) The name that needs to be fetched. Use user1 for testing. "
+												}
+											]
+										},
+										"method": "GET",
+										"body": {}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"body": "",
+									"cookie": [],
+									"_postman_previewlanguage": "text"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							}
+						},
+						{
+							"id": "1fe88a44-3578-476d-9e75-e6214ffbc02c",
+							"name": "Update user",
+							"request": {
+								"name": "Update user",
+								"description": {
+									"content": "This can only be done by the logged in user.",
+									"type": "text/plain"
+								},
+								"url": {
+									"path": [
+										"user",
+										":username"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "ipsum id pariatur enim",
+											"key": "username",
+											"description": "(Required) name that need to be deleted"
+										}
+									]
+								},
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"method": "PUT",
+								"auth": null,
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"disabled": false,
+											"key": "id",
+											"value": "10"
+										},
+										{
+											"disabled": false,
+											"key": "username",
+											"value": "theUser"
+										},
+										{
+											"disabled": false,
+											"key": "firstName",
+											"value": "John"
+										},
+										{
+											"disabled": false,
+											"key": "lastName",
+											"value": "James"
+										},
+										{
+											"disabled": false,
+											"key": "email",
+											"value": "john@email.com"
+										},
+										{
+											"disabled": false,
+											"key": "password",
+											"value": "12345"
+										},
+										{
+											"disabled": false,
+											"key": "phone",
+											"value": "12345"
+										},
+										{
+											"disabled": false,
+											"key": "userStatus",
+											"value": "1",
+											"description": "User Status"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "58ebcec3-9815-4bf2-874c-68a213320477",
+									"name": "successful operation",
+									"originalRequest": {
+										"url": {
+											"path": [
+												"user",
+												":username"
+											],
+											"host": [
+												"{{baseUrl}}"
+											],
+											"query": [],
+											"variable": [
+												{
+													"disabled": false,
+													"type": "any",
+													"value": "ipsum id pariatur enim",
+													"key": "username",
+													"description": "(Required) name that need to be deleted"
+												}
+											]
+										},
+										"method": "PUT",
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"disabled": false,
+													"key": "id",
+													"value": "10"
+												},
+												{
+													"disabled": false,
+													"key": "username",
+													"value": "theUser"
+												},
+												{
+													"disabled": false,
+													"key": "firstName",
+													"value": "John"
+												},
+												{
+													"disabled": false,
+													"key": "lastName",
+													"value": "James"
+												},
+												{
+													"disabled": false,
+													"key": "email",
+													"value": "john@email.com"
+												},
+												{
+													"disabled": false,
+													"key": "password",
+													"value": "12345"
+												},
+												{
+													"disabled": false,
+													"key": "phone",
+													"value": "12345"
+												},
+												{
+													"disabled": false,
+													"description": {
+														"content": "User Status",
+														"type": "text/plain"
+													},
+													"key": "userStatus",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"body": "",
+									"cookie": [],
+									"_postman_previewlanguage": "text"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							}
+						},
+						{
+							"id": "1f360b16-623f-407e-b01b-e712f739481c",
+							"name": "Delete user",
+							"request": {
+								"name": "Delete user",
+								"description": {
+									"content": "This can only be done by the logged in user.",
+									"type": "text/plain"
+								},
+								"url": {
+									"path": [
+										"user",
+										":username"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "ipsum id pariatur enim",
+											"key": "username",
+											"description": "(Required) The name that needs to be deleted"
+										}
+									]
+								},
+								"method": "DELETE",
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "ea408e51-5bdf-475f-b11c-357b9938a510",
+									"name": "Invalid username supplied",
+									"originalRequest": {
+										"url": {
+											"path": [
+												"user",
+												":username"
+											],
+											"host": [
+												"{{baseUrl}}"
+											],
+											"query": [],
+											"variable": [
+												{
+													"disabled": false,
+													"type": "any",
+													"value": "ipsum id pariatur enim",
+													"key": "username",
+													"description": "(Required) The name that needs to be deleted"
+												}
+											]
+										},
+										"method": "DELETE",
+										"body": {}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"body": "",
+									"cookie": [],
+									"_postman_previewlanguage": "text"
+								},
+								{
+									"id": "14bb5d7c-d6e7-4c2d-98d8-1139a74f5f40",
+									"name": "User not found",
+									"originalRequest": {
+										"url": {
+											"path": [
+												"user",
+												":username"
+											],
+											"host": [
+												"{{baseUrl}}"
+											],
+											"query": [],
+											"variable": [
+												{
+													"disabled": false,
+													"type": "any",
+													"value": "ipsum id pariatur enim",
+													"key": "username",
+													"description": "(Required) The name that needs to be deleted"
+												}
+											]
+										},
+										"method": "DELETE",
+										"body": {}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"body": "",
+									"cookie": [],
+									"_postman_previewlanguage": "text"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							}
+						}
+					],
+					"event": []
+				}
+			],
+			"event": []
+		}
+	],
+	"event": [],
+	"variable": [
+		{
+			"type": "string",
+			"value": "/api/v3",
+			"key": "baseUrl"
+		}
+	],
+	"info": {
+		"_postman_id": "cc9ded58-8730-43c4-a6b0-56c24ccbf3dc",
+		"name": "C2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"description": {
+			"content": "This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about\nSwagger at [http://swagger.io](http://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!\nYou can now help us improve the API whether it's by making changes to the definition itself or to the code.\nThat way, with time, we can improve the API in general, and expose some of the new features in OAS3.\n\nSome useful links:\n- [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)\n- [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)\n\nContact Support:\n Email: apiteam@swagger.io",
+			"type": "text/plain"
+		}
+	}
+}

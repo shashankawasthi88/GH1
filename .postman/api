@@ -4,10 +4,7 @@ id = 4bec47a1-2b51-46dc-a21e-7b62a631c8c8
 
 [relations.collections]
 rootDirectory = postman/collections
-files[] = {"id":"f28857b8-c16f-4508-bf11-2dc528a24683","path":"C1_536514-f28857b8-c16f-4508-bf11-2dc528a24683.json","metaData":{}}
-files[] = {"id":"2483ca98-d44e-4ee3-bf76-44cd3f73085a","path":"C1_536514-2483ca98-d44e-4ee3-bf76-44cd3f73085a.json","metaData":{}}
-files[] = {"id":"c7e9fc16-8664-4b83-ab7d-a0dd910da403","path":"C1_536514-c7e9fc16-8664-4b83-ab7d-a0dd910da403.json","metaData":{}}
-files[] = {"id":"26347892-86af-4096-8b4f-df11e9e3203b","path":"C1_536514-26347892-86af-4096-8b4f-df11e9e3203b.json","metaData":{}}
+files[] = {"id":"d5092408-3e7c-4f9e-aeae-beefd88cb559","path":"C1_536514-d5092408-3e7c-4f9e-aeae-beefd88cb559.json","metaData":{}}
 
 [relations.collections.metaData]
 
@@ -17,3 +14,4 @@ files[] = {"path":"index.json","metaData":{}}
 
 [relations.apiDefinition.metaData]
 id = 4bec47a1-2b51-46dc-a21e-7b62a631c8c8
+type = openapi:3

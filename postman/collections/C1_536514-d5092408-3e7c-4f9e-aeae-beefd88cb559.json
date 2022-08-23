@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "d5092408-3e7c-4f9e-aeae-beefd88cb559",
+		"name": "C1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "536514-d5092408-3e7c-4f9e-aeae-beefd88cb559"
+	},
+	"item": [
+		{
+			"name": "google.com",
+			"id": "4231c094-5e2e-45db-862f-f2a0350dae86",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "www.google.com",
+					"host": [
+						"www",
+						"google",
+						"com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
